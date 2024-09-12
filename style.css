@@ -1,0 +1,89 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: black;
+    color: white;
+
+    font-size: 200%;
+
+}
+
+body button {
+
+    background: none;
+    border: 0px;
+    color: white;
+    scale: 3;
+
+    margin: 10%;
+
+    transition: transform 1s ease;
+
+}
+
+#Coracao {
+
+    background: red;
+    animation: Pulsar 0.3s infinite;
+    border-radius: 100%;
+
+}
+
+#Piscar {
+
+    animation: Piscar 0.05s infinite;
+
+}
+
+body button:hover {
+
+    cursor: pointer;
+    transform: scale(1.5);
+
+}
+
+.passo {
+
+    display: none;
+
+}
+
+.passo.ativo {
+
+    display: block;
+
+}
+
+@keyframes Pulsar {
+
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+
+}
+
+@keyframes Piscar {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes Showup {
+
+    100%{transform: scale(2);
+    }
+
+}
